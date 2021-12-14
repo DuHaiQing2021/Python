@@ -36,7 +36,7 @@ class HomePage:
                         self.saveUser()
                         print("退出系统")
                 elif option=="A":
-                    if not (self.admin.adminOption()):
-                        self.saveUser()
-                        for i in self.allUserD:
-                            print("账号：{}\t手机号：{}\t身份证号：{}".format(i,self.allUserD[i]))
+                    self.saveUser()
+                    for i in self.allUserD:
+                        print("账号：{}\t手机号：{}\t身份证号：{}".format(i,self.allUserD[i].phone,self.allUserD[i].id))
+
